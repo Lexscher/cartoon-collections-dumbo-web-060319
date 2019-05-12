@@ -1,5 +1,7 @@
 def roll_call_dwarves(dwarves)
-  # Your code here
+  dwarves.each do |dwarf|
+    puts "/#{dwarves.index(dwarf) + 1}.*#{dwarf}/"
+  end
 end
 
 def summon_captain_planet(elements)
@@ -7,7 +9,7 @@ def summon_captain_planet(elements)
 end
 
 def long_planeteer_calls(calls)
-  # Your code here
+    # Your code here
 end
 
 def find_the_cheese(cheese)
