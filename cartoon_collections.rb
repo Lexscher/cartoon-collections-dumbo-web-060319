@@ -1,11 +1,14 @@
 def roll_call_dwarves(dwarves)
-  dwarves.each do |dwarf|
+  dwarves.collect do |dwarf|
     puts "/#{dwarves.index(dwarf) + 1}.*#{dwarf}/"
   end
 end
 
 def summon_captain_planet(elements)
-  # Your code here
+  elements.collect do |element|
+    element.capitalize!
+    element << "!"
+  end
 end
 
 def long_planeteer_calls(calls)
